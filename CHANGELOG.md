@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 Versioning is done using [Calendar Versioning](https://calver.org/).
 
-## [2025-04-09]
+## [2025-04-11]
 
 ### Added
 
@@ -80,7 +80,7 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 First public release.
 <!-- markdownlint-disable-file MD024 MD033 -->
 
-[2025-04-09]: https://github.com/latextemplates/ACM/compare/2025-03-04...2025-04-09s
+[2025-04-11]: https://github.com/latextemplates/ACM/compare/2025-03-04...2025-04-11
 [2025-03-04]: https://github.com/latextemplates/ACM/compare/2025-02-12...2025-03-04
 [2025-02-12]: https://github.com/latextemplates/ACM/compare/2025-01-31...2025-02-12
 [2025-01-31]: https://github.com/latextemplates/ACM/compare/2025-01-25...2025-01-31
