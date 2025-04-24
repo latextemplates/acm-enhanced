@@ -2,6 +2,9 @@
 
 > Quick start for modern LaTeXing for an ACM conference.
 
+Please be aware that this template is optimized for overleaf, which is based on TeXLive 2024.
+In case you are running a later TeXLive version (or use MiKTeX), please regenerate the template with the help of the [latex template generator].
+
 The official template is distributed via CTAN as the [acmart package](https://ctan.org/pkg/acmart), which is actively maintained.
 However, de-facto configurations (hyperref) and modern features of latex (microtype) are not configured.
 This template does it.
