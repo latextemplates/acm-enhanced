@@ -48,7 +48,7 @@ jobs:
            --latexcompiler=both\
            --bibtextool=bibtex\
            --overleaf=true\
-           --texlive=2025\
+           --texlive=2026\
            --lang=en\
            --font=default\
            --listings=${{ matrix.listings }}\
