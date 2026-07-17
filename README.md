@@ -100,6 +100,12 @@ You can run the [latex template generator] to enable the features.
 
 Hints on writing an abstract and thesis by Dirk Fahland.
 
+## Final submission
+
+The compiled PDF embeds the `paper.bib` file (via the [embedfile](https://ctan.org/pkg/embedfile) package), so readers can extract the reference data from the PDF, e.g., with JabRef via "Import into library".
+Some publishers' final-submission checks (e.g., IEEE PDF eXpress or PDF/A validation) reject PDFs containing file attachments.
+If your submission system complains, comment out the `\embedfile` line in `paper.tex` for the camera-ready version.
+
 ## Tool hints
 
 ### Prerequisites
