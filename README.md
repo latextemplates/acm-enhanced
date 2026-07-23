@@ -12,6 +12,11 @@ This template does it.
 This template is for the conferences.
 In case you need other configurations, please adapt `paper.tex` or run the [latex template generator].
 
+## Examples
+
+- [paper.pdf](https://latextemplates.github.io/acm-enhanced/paper.pdf) - regular conference paper.
+- [paper-minted.pdf](https://latextemplates.github.io/acm-enhanced/paper-minted.pdf) - conference paper showing minted in action.
+
 ## Usage
 
 - `paper.tex` is the main document
