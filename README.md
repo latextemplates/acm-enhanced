@@ -12,6 +12,8 @@ This template does it.
 This template is for the conferences.
 In case you need other configurations, please adapt `paper.tex` or run the [latex template generator].
 
+The LaTeX snippets this template is assembled from can be inspected at <https://latextemplates.github.io/latex-snippets/>.
+
 ## Examples
 
 - [paper.pdf](https://latextemplates.github.io/acm-enhanced/paper.pdf) - regular conference paper.
