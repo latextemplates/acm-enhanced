@@ -12,6 +12,13 @@ This template does it.
 This template is for the conferences.
 In case you need other configurations, please adapt `paper.tex` or run the [latex template generator].
 
+The LaTeX snippets this template is assembled from can be inspected at <https://latextemplates.github.io/latex-snippets/>.
+
+## Examples
+
+- [paper.pdf](https://latextemplates.github.io/acm-enhanced/paper.pdf) - regular conference paper.
+- [paper-minted.pdf](https://latextemplates.github.io/acm-enhanced/paper-minted.pdf) - conference paper showing minted in action.
+
 ## Usage
 
 - `paper.tex` is the main document
@@ -67,7 +74,7 @@ On the command line, there are additional features:
 - `latexmk -C` or `make clean` for cleaning up
 - `make format` to reformat the `.tex` files (one sentence per line and indent)
 - `make aspell` for interactive spell checking
-- `make stand`: Creates a new PDF with the current status of the thesis.
+- `make stand`: Creates a new PDF with the current status of the document.
 - `make view`: Opens the configured viewer
 - `make mrproper`: Cleans up and removes also editor backup files.
 
@@ -99,6 +106,19 @@ Following features were not activated for this template.
 You can run the [latex template generator] to enable the features.
 
 Hints on writing an abstract and thesis by Dirk Fahland.
+
+## Final submission
+
+The compiled PDF embeds the `paper.bib` file (via the [embedfile](https://ctan.org/pkg/embedfile) package), so readers can extract the reference data from the PDF, e.g., with JabRef via "Import into library".
+Some publishers' final-submission checks (e.g., IEEE PDF eXpress or PDF/A validation) reject PDFs containing file attachments.
+If your submission system complains, comment out the `\embedfile` line in `paper.tex` for the camera-ready version.
+
+### arXiv
+
+The first line of `paper.tex` is `\ifdefined\pdfoutput\pdfoutput=1\fi`.
+Keep it when uploading to arXiv: arXiv scans the first lines for `\pdfoutput=1` to decide between `pdflatex` and DVI-producing `latex`.
+Without the line, arXiv falls back to `latex`, which cannot build the modern fonts (they ship without Metafont sources) and aborts with an error such as `! I can't find file 'clmr28t10+20'`.
+See [this question on TeX.SE](https://tex.stackexchange.com/q/584702/9075) for details.
 
 ## Tool hints
 
@@ -179,7 +199,7 @@ Alternatively, just copy and paste the contents of the [vscode.settings.json](vs
 
 You can manually trigger compilation by hitting the green button in the extension or using other methods provided by LaTeX Workshop.
 
-Please remove the magic comments (`% !TeX program ...`) at the top of the `main-....tex` file.
+Please remove the magic comments (`% !TeX program ...`) at the top of the `paper.tex` file.
 Although [LaTeX-Workshop supports magic comments](https://github.com/James-Yu/LaTeX-Workshop/blob/master/README.md#magic-comments), it currently does not work reliably.
 Without the magic comments, compilation works.
 
