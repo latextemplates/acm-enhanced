@@ -17,10 +17,14 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 - Cross-references use [zref-clever](https://ctan.org/pkg/zref-clever) instead of [cleveref](https://ctan.org/pkg/cleveref), because zref-clever works with tagged (accessible) PDFs: write `\zcref{...}` instead of `\cref` and, at the start of a sentence, `\Zcref{...}` (short for `\zcref[S]{...}`) instead of `\Cref`.
 - `_latexmkrc` is organized in sections and lists commented-out alternatives for continuous preview (`-pvc`), the job name, and the PDF viewer (e.g., evince).
+- The "Corresponding LaTeX code" boxes of the examples break across columns and pages instead of overflowing when the floats of a page leave the columns too little room.
+- The example and paper-structure texts avoid words that textlint's `write-good` rule flags (`Finally`, `rarely`, `a few`, `just`), so a fresh paper has no textlint annotations. A sentence-initial `Finally,` is allowed in `.textlintrc.json`, because it marks a sequence rather than weakening a statement.
 
 ### Fixed
 
 - Long code lines without spaces (e.g., `\includegraphics[width=.4\linewidth]{example-image-a}`) in the "Corresponding LaTeX code" boxes of the `listings` variant are wrapped instead of running out of the box.
+- The "Corresponding LaTeX code" listing of the diagonal-table example (`diagbox`) no longer runs out of the column: the table has a short first cell, so latexindent's column alignment pads the rows less.
+- The paragraph and hyphenation examples no longer run out of the column: the link to Andrew Stacey's *Document Revision System* is a clickable title with the URL in a footnote, and the `\verb` snippets are short, because verbatim text cannot break.
 - Fixed typos in the example and writing-hint texts.
 - `latexmk -pv` opens the PDF on Linux and macOS: the SumatraPDF viewer is only configured on Windows.
 
