@@ -24,6 +24,7 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 - Long code lines without spaces (e.g., `\includegraphics[width=.4\linewidth]{example-image-a}`) in the "Corresponding LaTeX code" boxes of the `listings` variant are wrapped instead of running out of the box.
 - The "Corresponding LaTeX code" listing of the diagonal-table example (`diagbox`) no longer runs out of the column: the table has a short first cell, so latexindent's column alignment pads the rows less.
+- The paragraph and hyphenation examples no longer run out of the column: the link to Andrew Stacey's *Document Revision System* is a clickable title with the URL in a footnote, and the `\verb` snippets are short, because verbatim text cannot break.
 - Fixed typos in the example and writing-hint texts.
 - `latexmk -pv` opens the PDF on Linux and macOS: the SumatraPDF viewer is only configured on Windows.
 
