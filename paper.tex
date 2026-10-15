@@ -6,11 +6,12 @@
 % !BIB program = bibtex
 % -*- coding:utf-8 mod:LaTeX -*-
 %
-% vvvvvvvv  The content starts in line 536 (\begin{document}); the first
-%           heading (\section{Introduction}) is in line 555.
+% vvvvvvvv  The content starts in line 535 (\begin{document}); the first
+%           heading (\section{Introduction}) is in line 554.
 %           Everything above is the preamble: document class, packages, and settings.
 
 % Alternative to balance is the pbalance package (see https://ctan.org/pkg/pbalance), which sometimes works better
+% For a self-archiving version (e.g., for your homepage), add the class option authorversion
 \documentclass[sigconf,balance]{acmart}
 
 \usepackage{iftex}
@@ -49,7 +50,7 @@
 
 %% !!! If you change the font, be sure that words such as "workflow" can
 %% !!! still be copied from the PDF. If this is not the case, you have
-%% !!! to use glyphtounicode. See comment at cmap package.
+%% !!! to use glyphtounicode (pdflatex only). See the comment at \input{glyphtounicode}.
 %%
 %% Background: "workflow" contains "fl" which is a ligature, which in turn
 %%             is rendered as one character in the PDF and needs to be split
@@ -58,9 +59,8 @@
 \ifluatex
   \usepackage[no-math]{fontspec}
 
-  % Enable proper ligatures
+  % Enable proper ligatures for English documents (German documents use autotype, see ADR-0008)
   % For more information see https://ctan.org/pkg/selnolig
-  % language "english" or "ngerman" is passed to selnolig by the document class
   \usepackage{selnolig}
 
 \else
@@ -268,10 +268,9 @@
 \patchcmd{\NAT@test}{\else \NAT@nm}{\else \NAT@hyper@{\NAT@nm}}{}{}
 \makeatother
 
-% Embed the bibliography data into the PDF so that readers can extract it
-% (e.g., with JabRef via "Import into library" on the PDF)
-\usepackage{embedfile}
-\embedfile[mimetype=application/x-bibtex,desc=BibTeX entries of all references]{paper.bib}
+% To embed the bibliography into the PDF (readers can extract it, e.g., with JabRef via "Import into library" on the PDF), uncomment:
+%\usepackage{embedfile}
+%\embedfile[mimetype=application/x-bibtex,desc=BibTeX entries of all references]{paper.bib}
 
 \citestyle{acmnumeric} % alternative: acmauthoryear
 
@@ -857,6 +856,25 @@ Coordinates can also be given explicitly instead of as a function:
     \midrule
     One      & Two      \\
     Three    & Four     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\end{ltgexample}
+
+Rows and cells can be colored with \verb|\rowcolor| and \verb|\cellcolor| from the \href{https://ctan.org/pkg/colortbl}{colortbl} package, which \href{https://ctan.org/pkg/xcolor}{xcolor} loads with its option \verb|table|.
+
+\begin{ltgexample}
+\begin{table}
+  \caption{Table with colored cells}
+  \label{tab:colored}
+  \centering
+  \begin{tabular}{ll}
+    \toprule
+    \rowcolor{gray!20}
+    Test & Result                   \\
+    \midrule
+    A    & \cellcolor{green!20}pass \\
+    B    & \cellcolor{red!20}fail   \\
     \bottomrule
   \end{tabular}
 \end{table}
