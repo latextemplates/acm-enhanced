@@ -317,7 +317,7 @@ python3 -m pip install --force-reinstall latexminted
 
 ### Q: Is it possible produce a self-archiving version?
 
-Use the [`authorarchive` package](https://ctan.org/pkg/authorarchive) with the layout `ACM`.
+Add the class option `authorversion` (see the comment at `\documentclass` in `paper.tex`).
 
 ### Q: Can I also write in German?
 
