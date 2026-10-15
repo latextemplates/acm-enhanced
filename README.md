@@ -315,6 +315,10 @@ See [minted#425](https://github.com/gpoore/minted/issues/425) for details.
 python3 -m pip install --force-reinstall latexminted
 ```
 
+### Q: Is it possible produce a self-archiving version?
+
+Use the [`authorarchive` package](https://ctan.org/pkg/authorarchive) with the layout `ACM`.
+
 ### Q: Can I also write in German?
 
 Yes. You can regenerate the template and choose "German" as language.
