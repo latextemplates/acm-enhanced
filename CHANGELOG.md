@@ -22,12 +22,17 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 - README.md: links the decision records of the template generator.
 - README.md: "Usage with docker" merged into "Docker-based (recommended)".
 - Embedding the `.bib` file into the PDF is opt-in.
+- `.latexmkrc` replaces `_latexmkrc`; it works on Overleaf, too.
+- `make` runs the LaTeX tools in the Docker image (`make LOCAL=1` runs them locally).
+- `vscode.settings.json` compiles with `latexmk` in the Docker image.
+- README.md: compilation hints consolidated in "LaTeX compilation".
 
 ### Fixed
 
 - The README links the `figures/` directory, and `.dockerignore` excludes the generated `figures/*.pdf_tex` files. [generator-latex-template#586](https://github.com/latextemplates/generator-latex-template/pull/586)
 - The `.markdown.in` file of the markdown package is ignored by git and removed by `latexmk -c`.
 - textlint ignores expl3 function names, Markdown reference IDs, and the name of the markdown package.
+- `make view` opens the PDF on Linux and macOS.
 
 ## [2026-10-14]
 
