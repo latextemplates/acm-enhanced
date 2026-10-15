@@ -36,6 +36,7 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 - The `.markdown.in` file of the markdown package is ignored by git and removed by `latexmk -c`.
 - textlint ignores expl3 function names, Markdown reference IDs, and the name of the markdown package.
 - `make view` opens the PDF on Linux and macOS.
+- README.md: the self-archiving FAQ names the `authorarchive` layout.
 
 ## [2026-10-14]
 
