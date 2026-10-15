@@ -6,8 +6,8 @@
 % !BIB program = bibtex
 % -*- coding:utf-8 mod:LaTeX -*-
 %
-% vvvvvvvv  The content starts in line 531 (\begin{document}); the first
-%           heading (\section{Introduction}) is in line 550.
+% vvvvvvvv  The content starts in line 535 (\begin{document}); the first
+%           heading (\section{Introduction}) is in line 554.
 %           Everything above is the preamble: document class, packages, and settings.
 
 % Alternative to balance is the pbalance package (see https://ctan.org/pkg/pbalance), which sometimes works better
@@ -267,6 +267,10 @@
 \makeatletter
 \patchcmd{\NAT@test}{\else \NAT@nm}{\else \NAT@hyper@{\NAT@nm}}{}{}
 \makeatother
+
+% To embed the bibliography into the PDF (readers can extract it, e.g., with JabRef via "Import into library" on the PDF), uncomment:
+%\usepackage{embedfile}
+%\embedfile[mimetype=application/x-bibtex,desc=BibTeX entries of all references]{paper.bib}
 
 \citestyle{acmnumeric} % alternative: acmauthoryear
 
