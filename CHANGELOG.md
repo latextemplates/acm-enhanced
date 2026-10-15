@@ -9,7 +9,7 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 ### Changed
 
-- `paper.tex` uses minted; the variant with listings is `paper-basic-listings.tex`.
+- `paper.tex` uses minted; the variant using the listings package is `paper-basic-listings.tex`.
 
 ## [2026-10-15]
 
