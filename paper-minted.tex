@@ -7,8 +7,8 @@
 % !BIB program = bibtex
 % -*- coding:utf-8 mod:LaTeX -*-
 %
-% vvvvvvvv  The content starts in line 464 (\begin{document}); the first
-%           heading (\section{Introduction}) is in line 483.
+% vvvvvvvv  The content starts in line 463 (\begin{document}); the first
+%           heading (\section{Introduction}) is in line 482.
 %           Everything above is the preamble: document class, packages, and settings.
 
 % Alternative to balance is the pbalance package (see https://ctan.org/pkg/pbalance), which sometimes works better
@@ -59,9 +59,8 @@
 \ifluatex
   \usepackage[no-math]{fontspec}
 
-  % Enable proper ligatures
+  % Enable proper ligatures for English documents (German documents use autotype, see ADR-0008)
   % For more information see https://ctan.org/pkg/selnolig
-  % language "english" or "ngerman" is passed to selnolig by the document class
   \usepackage{selnolig}
 
 \else
