@@ -38,6 +38,7 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 - textlint ignores expl3 function names, Markdown reference IDs, and the name of the markdown package.
 - `make view` opens the PDF on Linux and macOS.
 - README.md: the self-archiving FAQ points to the example in `paper.tex`.
+- `vscode.settings.json`: the recipes run `lualatex` (resp. `pdflatex`) with the right bibliography tool.
 
 ## [2026-10-14]
 
