@@ -55,7 +55,7 @@ You can run the [latex template generator] to enable the features.
 
 Hints on writing an abstract and thesis by Dirk Fahland.
 
-## Contained Directories and Files
+## Contained directories and files
 
 ### Directories
 
