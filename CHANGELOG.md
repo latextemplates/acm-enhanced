@@ -15,6 +15,10 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 - `paper.tex` uses minted; the variant using the listings package is `paper-basic-listings.tex`.
 
+### Fixed
+
+- Example texts: spelling and grammar fixed.
+
 ## [2026-10-15]
 
 ### Added
