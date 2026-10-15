@@ -7,6 +7,10 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- [TeXtidote](https://github.com/sylvainhalle/textidote) checks spelling, grammar, and style (configuration `.textidote`), for English documents in CI.
+
 ### Changed
 
 - `paper.tex` uses minted; the variant using the listings package is `paper-basic-listings.tex`.
