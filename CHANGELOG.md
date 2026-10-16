@@ -9,16 +9,18 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 ### Added
 
-- [TeXtidote](https://github.com/sylvainhalle/textidote) checks spelling, grammar, and style (configuration `.textidote`, `make textidote`), for English documents in CI.
+- [TeXtidote](https://github.com/sylvainhalle/textidote) checks spelling, grammar, and style (configuration `.textidote`, `make spellcheck-textidote`), for English documents in CI.
 
 ### Changed
 
 - `paper.tex` uses minted; the variant using the listings package is `paper-basic-listings.tex`.
 - README.md: minted FAQs merged and moved up.
+- `make spellcheck` runs all spell checkers (`make aspell` is now `make spellcheck-aspell`).
 
 ### Fixed
 
 - Example texts: spelling and grammar fixed.
+- Makefile: `.PHONY` lists all targets; `make spellcheck-aspell` and `make showundef` work.
 
 ## [2026-10-15]
 
