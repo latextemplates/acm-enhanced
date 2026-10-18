@@ -9,8 +9,8 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 ### Changed
 
-- README.md: "Disabled features" is a subsection of "Benefits".
 - Markdown example: "a whole section" instead of "a longer part".
+- README.md: "Disabled features" is a subsection of "Benefits".
 
 ## [2026-10-16]
 
