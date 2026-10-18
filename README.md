@@ -24,7 +24,7 @@ The `-basic-listings` variants use the [listings] package instead and need no ex
 
 ## Quick start
 
-- Click on `Download ZIP` or [here](https://github.com/latextemplates/acm-enhanced/archive/main.zip).
+- Click on `Download ZIP` or download [acm-enhanced-main.zip](https://github.com/latextemplates/acm-enhanced/archive/main.zip).
 - Extract `acm-enhanced-main.zip` in the folder where you want to write your paper.
 - Edit [`paper.tex`](paper.tex).
 - Compile with "lualatex + bibtex" in your TeX editor or with `latexmk paper` / `make` on the command line.
@@ -70,6 +70,7 @@ Hints on writing an abstract and thesis by Dirk Fahland.
 - `paper.tex` - The main `.tex` file loading all LaTeX packages and their configurations.
   - Add text here
   - Adjust title, … here
+- [content-markdown.md](content-markdown.md) - A section written in plain Markdown, included with `\markdownInput` (LuaLaTeX only).
 - [bibliography.bib](bibliography.bib) - Bibliography. [biblatex] format. Manage it with [JabRef].
 - [abbreviations.tex](abbreviations.tex) - Acronyms and abbreviations.
 - [commands.tex](commands.tex) - Example LaTeX macros.
@@ -128,6 +129,7 @@ To have `minted` running with a traditional installation, you have to do followi
 
 1. Install python: `choco install python` - that uses [chocolatey](https://chocolatey.org/) to install Python
 2. Install [latexminted]: `pip install latexminted` - that uses the Python package manager to install the minted library
+
 ### latexmk hints
 
 [latexmk] runs the LaTeX tools (e.g., lualatex and bibtex) as often as needed to get the final PDF ([why `latexmk` is great](https://tex.stackexchange.com/a/249243/9075)).
@@ -403,9 +405,7 @@ Then, automatic installation should work again.
 The license of this work is [0BSD](https://spdx.org/licenses/0BSD.html) which corresponds to "public domain".
 Any derived work can freely be relicensed and can omit original copyright and license information.
 
-[biber]: https://www.ctan.org/pkg/biber
 [biblatex]: http://tex.stackexchange.com/tags/biblatex/info
-[bibtex]: https://www.ctan.org/pkg/bibtex
 [booktabs]: https://ctan.org/pkg/booktabs
 [zref-clever]: https://ctan.org/pkg/zref-clever
 [csquotes]: https://www.ctan.org/pkg/csquotes
@@ -417,7 +417,6 @@ Any derived work can freely be relicensed and can omit original copyright and li
 [lualatex]: http://www.luatex.org/
 [microtype]: https://ctan.org/pkg/microtype
 [minted]: https://ctan.org/pkg/minted
-[natbib]: https://ctan.org/pkg/natbib
 [paralist]: https://www.ctan.org/pkg/paralist
 [pdfcomment]: https://www.ctan.org/pkg/pdfcomment
 [upquote]: https://www.ctan.org/pkg/upquote
