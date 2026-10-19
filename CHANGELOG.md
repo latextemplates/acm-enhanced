@@ -11,6 +11,7 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 - A section written in plain Markdown (`content-markdown.md`; LuaLaTeX).
 - VS Code: [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) recommended, configured by `.markdownlint.yml`.
+- VS Code: LTeX+ knows the words of the aspell word lists (`.vscode/ltex.dictionary.<language>.txt`).
 - CI: [typos](https://github.com/crate-ci/typos) checks the spelling, also in comments (configured in `.typos.toml`).
 
 ### Changed
@@ -24,6 +25,10 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 - CI: `update-files.yml` no longer passes the ignored `--cleveref=true`.
 - README.md: "Disabled features" is a subsection of "Benefits".
 - README.md: markdownlint findings fixed.
+
+### Removed
+
+- `paper.spell.good`: word list of a former spell check, no longer used.
 
 ### Fixed
 
