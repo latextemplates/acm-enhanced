@@ -25,6 +25,7 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 - CI and `make spellcheck`: aspell and TeXtidote run in the [Docker image by DANTE e.V.](https://hub.docker.com/r/danteev/texlive).
 - CI: `update-files.yml` no longer passes the ignored `--cleveref=true`.
 - README.md: FAQ on adding words (e.g., names of tools) to the spell checkers.
+- README.md: how to run the `make` targets in Docker without a local `make`.
 - README.md: "Disabled features" is a subsection of "Benefits".
 - README.md: markdownlint findings fixed.
 
