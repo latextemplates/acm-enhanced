@@ -11,6 +11,7 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 - A section written in plain Markdown (`content-markdown.md`; LuaLaTeX).
 - VS Code: [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) recommended, configured by `.markdownlint.yml`.
+- CI: [typos](https://github.com/crate-ci/typos) checks the spelling, also in comments (configured in `_typos.toml`).
 
 ### Changed
 
@@ -23,6 +24,10 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 - CI: `update-files.yml` no longer passes the ignored `--cleveref=true`.
 - README.md: "Disabled features" is a subsection of "Benefits".
 - README.md: markdownlint findings fixed.
+
+### Fixed
+
+- Typos fixed, mostly in comments; German comments in the English files translated.
 
 ## [2026-10-16]
 
