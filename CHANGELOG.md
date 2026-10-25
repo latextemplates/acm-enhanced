@@ -17,6 +17,7 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 ### Changed
 
+- Long URLs may break after any character ([xurl](https://ctan.org/pkg/xurl)), so they no longer run into the margin.
 - The README recommends the [JabRef beta version](https://github.com/JabRef/jabref/releases), because the stable version 5.15 is too old.
 
 ### Removed
