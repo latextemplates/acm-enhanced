@@ -11,6 +11,10 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 - LaTeX hints: how to polish a single paragraph with `\looseness` once the text is final.
 
+### Fixed
+
+- `\textcomment`: the highlighted text breaks across lines with LuaLaTeX; before, a longer passage ran into the margin.
+
 ## [2026-10-26]
 
 ### Added
