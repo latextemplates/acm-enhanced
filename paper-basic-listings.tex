@@ -6,8 +6,8 @@
 % !BIB program = bibtex
 % -*- coding:utf-8 mod:LaTeX -*-
 %
-% vvvvvvvv  The content starts in line 601 (\begin{document}); the first
-%           heading (\section{Introduction}) is in line 620.
+% vvvvvvvv  The content starts in line 607 (\begin{document}); the first
+%           heading (\section{Introduction}) is in line 626.
 %           Everything above is the preamble: document class, packages, and settings.
 
 % Alternative to balance is the pbalance package (see https://ctan.org/pkg/pbalance), which sometimes works better
@@ -347,7 +347,13 @@
 % Enable nice comments
 \usepackage{pdfcomment}
 
-\newcommand{\textcomment}[2]{\colorbox{yellow!60}{#1}\pdfcomment[color={0.234 0.867 0.211},hoffset=-6pt,voffset=10pt,opacity=0.5]{#2}}
+\ifdefined\directlua
+  % Highlighting that breaks across lines (\colorbox does not): lua-ul's \highLight; the color needs luacolor
+  \usepackage{luacolor,lua-ul}
+  \newcommand{\textcomment}[2]{\highLight[yellow!60]{#1}\pdfcomment[color={0.234 0.867 0.211},hoffset=-6pt,voffset=10pt,opacity=0.5]{#2}}
+\else
+  \newcommand{\textcomment}[2]{\colorbox{yellow!60}{#1}\pdfcomment[color={0.234 0.867 0.211},hoffset=-6pt,voffset=10pt,opacity=0.5]{#2}}
+\fi
 
 % Small PDF comment
 % 1st parameter: comment
