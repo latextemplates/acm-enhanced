@@ -9,6 +9,7 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 ### Added
 
+- README: an "Advanced quick start" sets up the document as a git repository with the template as remote, so template updates can be merged later; the FAQ on synchronizing updates points to it.
 - LaTeX hints: how to polish a single paragraph with `\looseness` once the text is final.
 
 ### Fixed
