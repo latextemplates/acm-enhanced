@@ -6,8 +6,8 @@
 % !BIB program = bibtex
 % -*- coding:utf-8 mod:LaTeX -*-
 %
-% vvvvvvvv  The content starts in line 655 (\begin{document}); the first
-%           heading (\section{Introduction}) is in line 674.
+% vvvvvvvv  The content starts in line 656 (\begin{document}); the first
+%           heading (\section{Introduction}) is in line 675.
 %           Everything above is the preamble: document class, packages, and settings.
 
 % Alternative to balance is the pbalance package (see https://ctan.org/pkg/pbalance), which sometimes works better
@@ -553,13 +553,14 @@
     listing only,
     % Split across columns and pages. An unbreakable box overflows into the floats or the bottom margin when the floats of a page leave the narrow columns too little room
     breakable,
-    listing file=\currfilepath,
+% \currfilename, not \currfilepath: a chapter is read through the import path of subfiles, which minted would prepend once more
+    listing file=\currfilename,
     colback=green!5!white,
     colframe=green!25,
     coltitle=black!90,
     coltext=black!90,
     left=8mm,
-    title=Corresponding \LaTeX{} code of \texttt{\currfilepath},
+    title=Corresponding \LaTeX{} code of \texttt{\currfilename},
     listing options={
         frame=none,
         language={[LaTeX]TeX},
