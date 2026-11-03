@@ -7,8 +7,8 @@
 % -*- coding:utf-8 mod:LaTeX -*-
 % Generated with generator-latex-template 2026.11.3 for latextemplates/acm-enhanced
 %
-% vvvvvvvv  The content starts in line 616 (\begin{document}); the first
-%           heading (\section{Introduction}) is in line 635.
+% vvvvvvvv  The content starts in line 619 (\begin{document}); the first
+%           heading (\section{Introduction}) is in line 638.
 %           Everything above is the preamble: document class, packages, and settings.
 
 % Alternative to balance is the pbalance package (see https://ctan.org/pkg/pbalance), which sometimes works better
@@ -63,11 +63,14 @@
 
 \ifluatex
   \usepackage[no-math]{fontspec}
+  % newtxtext is for pdflatex. Under LuaLaTeX, it replaces the fonts set below by TeX Gyre Termes X without TeX ligatures: `` and '' appear as two single quotes (e.g., in the bibliography)
+  \newcommand{\ltgNewtxtextError}{\GenericError{}{newtxtext loaded under LuaLaTeX}{}{Remove \string\usepackage{newtxtext}: the fonts are set with fontspec in paper.tex (search for \string\setmainfont).}}
+  \IfPackageLoadedTF{newtxtext}{\ltgNewtxtextError}{}
+  \AddToHook{package/newtxtext/before}{\ltgNewtxtextError}
 
   % Enable proper ligatures for English documents (German documents use autotype, see ADR-0008)
   % For more information see https://ctan.org/pkg/selnolig
   \usepackage{selnolig}
-
 \else
 
   % Has to be loaded AFTER any font packages. See https://tex.stackexchange.com/a/2869/9075.
