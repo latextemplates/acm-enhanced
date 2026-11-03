@@ -7,6 +7,10 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- The `Update Files` workflow generates all variants in one job and pushes one commit instead of one per variant.
+
 ### Fixed
 
 - The wide-table example is scaled to the column width (`\linewidth`), not to `\textwidth`, which let it run into the other column.
