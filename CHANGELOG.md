@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 Versioning is done using [Calendar Versioning](https://calver.org/).
 
+## [Unreleased]
+
+### Changed
+
+- The `Update Files` workflow generates all variants in one job and pushes one commit instead of one per variant.
+
+### Fixed
+
+- The wide-table example is scaled to the column width (`\linewidth`), not to `\textwidth`, which let it run into the other column.
+- `minted` listings use the same font size as `listings` ones (`\footnotesize`) instead of the text size.
+
 ## [2026-11-03]
 
 ### Added
