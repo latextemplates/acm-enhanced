@@ -7,8 +7,8 @@
 % -*- coding:utf-8 mod:LaTeX -*-
 % Generated with generator-latex-template 2026.11.4 for latextemplates/acm-enhanced
 %
-% vvvvvvvv  The content starts in line 621 (\begin{document}); the first
-%           heading (\section{Introduction}) is in line 640.
+% vvvvvvvv  The content starts in line 622 (\begin{document}); the first
+%           heading (\section{Introduction}) is in line 641.
 %           Everything above is the preamble: document class, packages, and settings.
 
 % Alternative to balance is the pbalance package (see https://ctan.org/pkg/pbalance), which sometimes works better
@@ -72,7 +72,8 @@
 
   % Enable proper ligatures for English documents (German documents use autotype, see ADR-0008)
   % For more information see https://ctan.org/pkg/selnolig
-  \usepackage{selnolig}
+  % The language has to be named: without it, selnolig loads no rules (acmart and scrbook do not pass "english" as a class option)
+  \usepackage[english]{selnolig}
 \else
 
   % Has to be loaded AFTER any font packages. See https://tex.stackexchange.com/a/2869/9075.
