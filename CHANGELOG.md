@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 Versioning is done using [Calendar Versioning](https://calver.org/).
 
+## [Unreleased]
+
+### Fixed
+
+- Under LuaLaTeX, `selnolig` is loaded with the `english` option; before, it loaded no rules, so wrong ligatures such as "shelfful" were not suppressed.
+
 ## [2026-11-04]
 
 ### Changed
