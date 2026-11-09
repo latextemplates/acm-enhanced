@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 Versioning is done using [Calendar Versioning](https://calver.org/).
 
-## [Unreleased]
+## [2026-11-09]
 
 ### Fixed
 
@@ -317,7 +317,8 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 First public release.
 <!-- markdownlint-disable-file MD024 MD033 -->
 
-[Unreleased]: https://github.com/latextemplates/acm-enhanced/compare/2026-11-04...HEAD
+[Unreleased]: https://github.com/latextemplates/acm-enhanced/compare/2026-11-09...HEAD
+[2026-11-09]: https://github.com/latextemplates/acm-enhanced/compare/2026-11-04...2026-11-09
 [2026-11-04]: https://github.com/latextemplates/acm-enhanced/compare/2026-11-03...2026-11-04
 [2026-11-03]: https://github.com/latextemplates/acm-enhanced/compare/2026-11-01...2026-11-03
 [2026-11-01]: https://github.com/latextemplates/acm-enhanced/compare/2026-10-30...2026-11-01
