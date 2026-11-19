@@ -9,6 +9,7 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 ### Added
 
+- `paper-anon.tex` typesets the paper for a double-blind review with the class option `anonymous`. Compile it with `latexmk paper-anon`.
 - `\TODO{...}` marks a TODO and `\FIXME{...}` an important one.
 
 ### Changed
