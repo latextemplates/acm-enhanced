@@ -275,6 +275,12 @@ You can manually trigger compilation by hitting the green button in the extensio
 The main file starts with a magic comment that tells LTeX+ the language of the document, e.g., `% LTeX: language=en-US`.
 Add the same comment to further `.tex` files.
 
+## Anonymous submission (double-blind review)
+
+`paper-anon.tex` typesets `paper.tex` with acmart's class option `anonymous`: compile it with `latexmk paper-anon`.
+It hides the authors and the acknowledgments; `\anon{...}` hides anything else that identifies you (it prints ANONYMOUS), and `\anon[an anonymous university]{...}` prints a replacement.
+Write self-citations in the third person ("Doe et al. [3] showed" instead of "in our previous work [3]") and link an anonymized copy of your repository, e.g., via <https://anonymous.4open.science/>.
+
 ## Final submission
 
 ### arXiv
