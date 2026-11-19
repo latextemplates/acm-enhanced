@@ -16,6 +16,10 @@ Versioning is done using [Calendar Versioning](https://calver.org/).
 
 - TODOs are set with [zebra](https://ctan.org/pkg/zebra): `\todo{...}` is a short note in the text with a numbered symbol in the margin, and all open notes are listed at the end of the document. `\usepackage[final]{zebra}` hides them for the final version.
 
+### Fixed
+
+- The boxes with the LaTeX code of the examples in `paper-basic-listings.pdf` no longer start with a line of special characters (`œŒűŰőŐł…`).
+
 ## [2026-11-09]
 
 ### Fixed
