@@ -18,6 +18,7 @@ The LaTeX snippets this template is assembled from can be inspected at <https://
 
 - [paper.pdf](https://latextemplates.github.io/acm-enhanced/paper.pdf) - regular conference paper.
 - [paper-basic-listings.pdf](https://latextemplates.github.io/acm-enhanced/paper-basic-listings.pdf) - the same paper using the listings package (instead of minted) for source code.
+- [paper-anon.pdf](https://latextemplates.github.io/acm-enhanced/paper-anon.pdf) - the same paper anonymized for a double-blind review (see [Anonymous submission](#anonymous-submission-double-blind-review)).
 
 The source code examples use the [minted] package, which highlights code best; it needs Python and [latexminted] (contained in the Docker image and on Overleaf).
 The `-basic-listings` variants use the [listings] package instead and need no extra setup.
@@ -68,6 +69,8 @@ Following features are enabled in this template:
 - Support of hyperlinked references without extra color thanx to [hyperref].
 - Better breaking of long URLs.
 - Support for `\powerset` command.
+- TODOs (`\todo{...}`) as short notes in the text with a numbered symbol in the margin, and a list of all open notes at the end of the document.
+  This is enabled by the [zebra](https://ctan.org/pkg/zebra) package.
 - (Optional) Support todos as pdf annotations. This is enabled by the [pdfcomment] package.
 - [microtypographic extensions](https://www.ctan.org/pkg/microtype) for a better look of the paper.
 - Modern packages such as [microtype], [zref-clever], [csquotes], [paralist], [hyperref], [hypcap], [upquote], [booktabs].
@@ -272,6 +275,12 @@ You can manually trigger compilation by hitting the green button in the extensio
 
 The main file starts with a magic comment that tells LTeX+ the language of the document, e.g., `% LTeX: language=en-US`.
 Add the same comment to further `.tex` files.
+
+## Anonymous submission (double-blind review)
+
+`paper-anon.tex` typesets `paper.tex` with acmart's class option `anonymous`: compile it with `latexmk paper-anon`.
+It hides the authors and the acknowledgments; `\anon{...}` hides anything else that identifies you (it prints ANONYMOUS), and `\anon[an anonymous university]{...}` prints a replacement.
+Write self-citations in the third person ("Doe et al. [3] showed" instead of "in our previous work [3]") and link an anonymized copy of your repository, e.g., via <https://anonymous.4open.science/>.
 
 ## Final submission
 
